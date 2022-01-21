@@ -2,7 +2,7 @@ Package: test
 Name: test
 Version: 1
 Architecture: iphoneos-arm
-Description: no
+Description: Bring more features to APowerMirror
 Maintainer: ios <iosrouter69@gmail.com>
 Author:  ios <iosrouter69@gmail.com>
 Section: Tweak
