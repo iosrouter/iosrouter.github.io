@@ -6,7 +6,6 @@ Description: Bring more features to APowerMirror
 Maintainer: ios <iosrouter69@gmail.com>
 Author:  ios <iosrouter69@gmail.com>
 Section: Tweak
-Depends: ws.hbang.alderis
 Filename: debs/com.ios.apowermirror_1.0_iphoneos-arm.deb
 Size: 4090
 MD5sum: 672AEF18CEA2DC19178C0B5841674F6C
