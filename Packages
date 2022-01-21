@@ -1,0 +1,14 @@
+Package: test
+Name: test
+Version: 1
+Architecture: iphoneos-arm
+Description: no
+Maintainer: ios <iosrouter69@gmail.com>
+Author:  ios <iosrouter69@gmail.com>
+Section: Tweak
+Depends: ws.hbang.alderis
+Filename: debs/com.ios.apowermirror_1.0_iphoneos-arm.deb
+Size: 4090
+MD5sum: 672AEF18CEA2DC19178C0B5841674F6C
+SHA1: 3B3DC1F4342AC7D04913FB98890B15303A6E88F7
+SHA256: 17D659C213A6928FDCD2F2A43BF2A6C968A755511423A0A203C8B3A7F6D010FE
