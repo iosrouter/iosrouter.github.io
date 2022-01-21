@@ -1,8 +1,8 @@
-Origin: (Modify)
-Label: (Modify)
+Origin: iosrouter.github.io
+Label: iosrouter.github.io
 Suite: stable
 Version: 1.0
 Codename: ios
 Architectures: iphoneos-arm
 Components: main
-Description: (Modify)
+Description: Best Repo Ever!
