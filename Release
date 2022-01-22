@@ -1,8 +1,0 @@
-Origin: iosrouter
-Label: iosrouter's repo
-Suite: stable
-Version: 1.0
-Codename: iosrouter's repo
-Architectures: iphoneos-arm
-Components: main
-Description: iosrouter's repo

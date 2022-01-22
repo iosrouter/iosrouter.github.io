@@ -1,15 +1,18 @@
-Package: APowerMirror
-Name: APowerMirror
+Package: com.ios.apowermirror
 Version: 1.0.0
 Architecture: iphoneos-arm
-Description: Bring more features to APowerMirror
 Maintainer: ios <iosrouter69@gmail.com>
-Author:  ios <iosrouter69@gmail.com>
+Installed-Size: 216
+Depends: mobilesubstrate (>= 0.9.5000)
+Filename: ./debs/com.ios.apowermirror_1.0.0_iphoneos-arm.deb
+Size: 4260
+MD5sum: 54958ccb1cc1c89344d962e43ce05be9
+SHA1: 8ef3a329a55f57acb986f093f73f7c7cdb3ff3e2
+SHA256: aab6919026a85185cd7e20ca23bd83328ffbca539e7586ad75cee4c9cff335fb
 Section: Tweak
-Filename: debs/com.ios.apowermirror_1.0_iphoneos-arm.deb
-Size: 4090
-SHA512: 41562ED7F5EA0B1115E71B74A8659619F6643D76123A8FFC5C69A38BA72D6B11ED6A9A0AC18F7B2299F08FD8423AF25373DB241B035864E52128FF2B8971B8DE
-MD5sum: 672AEF18CEA2DC19178C0B5841674F6C
-SHA1: 3b3dc1f4342ac7d04913fb98890b15303a6e88f7
-SHA256: 17D659C213A6928FDCD2F2A43BF2A6C968A755511423A0A203C8B3A7F6D010FE
+Description: Bring more features to APowerMirror
+Author: ios <iosrouter69@gmail.com>
 Depiction: http://iosrouter.github.io/files/apowermirror.html
+Icon: https://raw.githubusercontent.com/iosrouter/iosrouter.github.io/main/icons/apowermirror.png
+Name: APowerMirror
+
