@@ -1,18 +1,36 @@
-Package: com.ios.apowermirror
+Package: com.ios.mediakiller
 Version: 1.0.0
 Architecture: iphoneos-arm
 Maintainer: ios <iosrouter69@gmail.com>
-Installed-Size: 216
-Depends: mobilesubstrate (>= 0.9.5000)
-Filename: debs/com.ios.apowermirror_1.0.0_iphoneos-arm.deb
-Size: 4260
-MD5sum: 54958ccb1cc1c89344d962e43ce05be9
-SHA1: 8ef3a329a55f57acb986f093f73f7c7cdb3ff3e2
-SHA256: aab6919026a85185cd7e20ca23bd83328ffbca539e7586ad75cee4c9cff335fb
-Section: Tweak
-Description: Bring more features to APowerMirror
+Installed-Size: 232
+Depends: mobilesubstrate (>= 0.9.5000), libactivator (>= 1.8.3)
+Filename: debs/com.ios.mediakiller_1.0.0_iphoneos-arm.deb
+Size: 10086
+MD5sum: 7a366385bb08425e2da823aa569aee66
+SHA1: 143f114f72b1f3fa694535f4f8ebdf6e505d5764
+SHA256: d3383bf2fd086e5e535d180f7f12c0078f1116aa300f308f8747d5b3fcea44bf
+Section: Addons (Activator)
+Description: Kills media player while retaining audio playback. Purely visual and shouldnt affect audio playback.
 Author: ios <iosrouter69@gmail.com>
-Depiction: http://iosrouter.github.io/files/apowermirror.html
-Icon: https://raw.githubusercontent.com/iosrouter/iosrouter.github.io/main/icons/apowermirror.png
-Name: APowerMirror
+Depiction: http://iosrouter.github.io/files/mediakiller.html
+Icon: https://raw.githubusercontent.com/iosrouter/iosrouter.github.io/main/icons/mediakiller.png
+Name: MediaKiller
+
+Package: com.ios.phonephix
+Version: 1.0.0
+Architecture: iphoneos-arm
+Maintainer: ios <iosrouter69@gmail.com>
+Installed-Size: 232
+Depends: mobilesubstrate (>= 0.9.5000), libactivator (>= 1.8.3)
+Filename: debs/com.ios.phonephix_1.0.0_iphoneos-arm.deb
+Size: 9582
+MD5sum: 58bf358d1b9a2a4a6f9b588441df7fc1
+SHA1: 1ca4bc2e5a8cdeb9e5265c97810dbef72807bdca
+SHA256: 0866e3d177b1005a320892a459aff8f35dadd67a9ddeba4f7e8cf2d947798f0d
+Section: Addons (Activator)
+Description: Kills buggy persistant incallservice application from activator.
+Author: ios <iosrouter69@gmail.com>
+Depiction: http://iosrouter.github.io/files/phonephix.html
+Icon: https://raw.githubusercontent.com/iosrouter/iosrouter.github.io/main/icons/phonephix.png
+Name: PhonePhix
 
