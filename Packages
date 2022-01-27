@@ -2,13 +2,13 @@ Package: com.ios.mediakiller
 Version: 1.0.0
 Architecture: iphoneos-arm
 Maintainer: ios <iosrouter69@gmail.com>
-Installed-Size: 232
+Installed-Size: 452
 Depends: mobilesubstrate (>= 0.9.5000), libactivator (>= 1.8.3)
 Filename: debs/com.ios.mediakiller_1.0.0_iphoneos-arm.deb
-Size: 10086
-MD5sum: 7a366385bb08425e2da823aa569aee66
-SHA1: 143f114f72b1f3fa694535f4f8ebdf6e505d5764
-SHA256: d3383bf2fd086e5e535d180f7f12c0078f1116aa300f308f8747d5b3fcea44bf
+Size: 14098
+MD5sum: b3f8e799af4c06feb54d61f331bd1637
+SHA1: 0f55c27eea2d401ce405d77b5123bc4ad9ce425b
+SHA256: 3e8cd3f14dacfe971dab8882c052c7edc48f1f1bd08c659d48064aff09398691
 Section: Addons (Activator)
 Description: Kills media player while retaining audio playback. Purely visual and shouldnt affect audio playback.
 Author: ios <iosrouter69@gmail.com>
@@ -20,13 +20,13 @@ Package: com.ios.phonephix
 Version: 1.0.0
 Architecture: iphoneos-arm
 Maintainer: ios <iosrouter69@gmail.com>
-Installed-Size: 232
+Installed-Size: 448
 Depends: mobilesubstrate (>= 0.9.5000), libactivator (>= 1.8.3)
 Filename: debs/com.ios.phonephix_1.0.0_iphoneos-arm.deb
-Size: 9582
-MD5sum: 58bf358d1b9a2a4a6f9b588441df7fc1
-SHA1: 1ca4bc2e5a8cdeb9e5265c97810dbef72807bdca
-SHA256: 0866e3d177b1005a320892a459aff8f35dadd67a9ddeba4f7e8cf2d947798f0d
+Size: 13546
+MD5sum: 7f42b3ba868ffcb3e3f562ae893b6c73
+SHA1: d2bf56380f11c1bb039039778aab16ff83f6c0ab
+SHA256: dfcf680e01670570ff2aad209bcd42b2fa6f74c962d30e022fc4469ad7a75989
 Section: Addons (Activator)
 Description: Kills buggy persistant incallservice application from activator.
 Author: ios <iosrouter69@gmail.com>
