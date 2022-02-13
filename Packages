@@ -16,6 +16,24 @@ Depiction: http://iosrouter.github.io/files/mediakiller.html
 Icon: https://raw.githubusercontent.com/iosrouter/iosrouter.github.io/main/icons/mediakiller.png
 Name: MediaKiller
 
+Package: com.ios.overcharged
+Version: 1.0.0
+Architecture: iphoneos-arm
+Maintainer: ios <iosrouter69@gmail.com>
+Installed-Size: 416
+Depends: mobilesubstrate (>= 0.9.5000)
+Filename: debs/com.ios.overcharged_1.0.0_iphoneos-arm.deb
+Size: 14230
+MD5sum: 474455bb40da6af69c1d49af8bd9d174
+SHA1: 176e45dc0b554b726e5ccc9019ae6920dd2ad456
+SHA256: 8e0f261b9285e578c2f0bd6a53ac8882f5b325ceff1512705581ab914adff93f
+Section: Tweaks
+Description: OverCharged allows charging past 100% on your device to see how much you could have charged your device. VISUAL ONLY.
+Author: ios <iosrouter69@gmail.com>
+Depiction: http://iosrouter.github.io/files/overcharged.html
+Icon: https://raw.githubusercontent.com/iosrouter/iosrouter.github.io/main/icons/overcharged.png
+Name: OverCharged
+
 Package: com.ios.phonephix
 Version: 1.0.0
 Architecture: iphoneos-arm
