@@ -1,10 +1,28 @@
+Package: com.ios.alwaysvpn
+Version: 0.0.1
+Architecture: iphoneos-arm
+Maintainer: ios <iosrouter69@gmail.com>
+Installed-Size: 816
+Depends: mobilesubstrate (>= 0.9.5000), com.muirey03.libmryipc, com.yulkytulky.actify
+Filename: ./debs/com.ios.alwaysvpn_0.0.1_iphoneos-arm.deb
+Size: 30634
+MD5sum: a9d2b417bce435dd936f0603f2fc8ed7
+SHA1: 8452ee3a383e837fe3353bdd8e1f322be5df7984
+SHA256: 7ec941a6578b0a3d84009e2e94dd2396ee737f25bc180fd63d5dc2de242f1f7e
+Section: Tweaks
+Description: Disallows apps opening without a VPN connection. *Configurable
+Author: ios <iosrouter69@gmail.com>
+Depiction: http://iosrouter.github.io/files/alwaysvpn.html
+Icon: https://raw.githubusercontent.com/iosrouter/iosrouter.github.io/main/icons/alwaysvpn.png
+Name: AlwaysVPN
+
 Package: com.ios.mediakiller
 Version: 1.0.0
 Architecture: iphoneos-arm
 Maintainer: ios <iosrouter69@gmail.com>
 Installed-Size: 452
 Depends: mobilesubstrate (>= 0.9.5000), libactivator (>= 1.8.3)
-Filename: debs/com.ios.mediakiller_1.0.0_iphoneos-arm.deb
+Filename: ./debs/com.ios.mediakiller_1.0.0_iphoneos-arm.deb
 Size: 14098
 MD5sum: b3f8e799af4c06feb54d61f331bd1637
 SHA1: 0f55c27eea2d401ce405d77b5123bc4ad9ce425b
@@ -22,7 +40,7 @@ Architecture: iphoneos-arm
 Maintainer: ios <iosrouter69@gmail.com>
 Installed-Size: 416
 Depends: mobilesubstrate (>= 0.9.5000)
-Filename: debs/com.ios.overcharged_1.0.0_iphoneos-arm.deb
+Filename: ./debs/com.ios.overcharged_1.0.0_iphoneos-arm.deb
 Size: 14230
 MD5sum: 474455bb40da6af69c1d49af8bd9d174
 SHA1: 176e45dc0b554b726e5ccc9019ae6920dd2ad456
@@ -40,7 +58,7 @@ Architecture: iphoneos-arm
 Maintainer: ios <iosrouter69@gmail.com>
 Installed-Size: 448
 Depends: mobilesubstrate (>= 0.9.5000), libactivator (>= 1.8.3)
-Filename: debs/com.ios.phonephix_1.0.0_iphoneos-arm.deb
+Filename: ./debs/com.ios.phonephix_1.0.0_iphoneos-arm.deb
 Size: 13546
 MD5sum: 7f42b3ba868ffcb3e3f562ae893b6c73
 SHA1: d2bf56380f11c1bb039039778aab16ff83f6c0ab
