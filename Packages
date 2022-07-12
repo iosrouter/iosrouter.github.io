@@ -12,8 +12,6 @@ SHA256: 7ec941a6578b0a3d84009e2e94dd2396ee737f25bc180fd63d5dc2de242f1f7e
 Section: Tweaks
 Description: Disallows apps opening without a VPN connection. *Configurable
 Author: ios <iosrouter69@gmail.com>
-Depiction: http://iosrouter.github.io/files/alwaysvpn.html
-Icon: https://raw.githubusercontent.com/iosrouter/iosrouter.github.io/main/icons/alwaysvpn.png
 Name: AlwaysVPN
 
 Package: com.ios.mediakiller
@@ -69,4 +67,20 @@ Author: ios <iosrouter69@gmail.com>
 Depiction: http://iosrouter.github.io/files/phonephix.html
 Icon: https://raw.githubusercontent.com/iosrouter/iosrouter.github.io/main/icons/phonephix.png
 Name: PhonePhix
+
+Package: science.xnu.undecimus
+Version: 8.0.2
+Architecture: iphoneos-arm
+Maintainer: ios
+Depends: firmware (>=11.0)
+Filename: ./debs/science.xnu.undecimus_8.0.2_iphoneos-arm.deb
+Size: 54459130
+MD5sum: bf15767ff0c341722ed664c273bbbdc6
+SHA1: ba92104520862ef5e26da86e559b4b4203fc1358
+SHA256: eb5724a5b0f36c51ecb4e1fa33b59a2d89a26186bf07bf57a97158d5f54ff0ad
+Section: Applications
+Description: Permasigned Unc0ver 8.0.2. Works with fugu14 also. Signed and fixed by iosrouter.
+Author: ios
+Name: unc0ver (Permasigned 8.0.2)
+Tags: compatible_min::ios11.0
 
