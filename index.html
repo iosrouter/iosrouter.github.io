@@ -72,9 +72,7 @@
         const bloodSugarElement = document.getElementById("bloodSugar");
         bloodSugarElement.innerHTML = "Current Blood Sugar: " + response;
       },
-      error: function(xhr, status, error) {
-        var err = eval("(" + xhr.responseText + ")");
-        alert(err);
+      error: function() {
         const bloodSugarElement = document.getElementById("bloodSugar");
         bloodSugarElement.innerHTML = "Failed to fetch blood sugar data.";
       }
