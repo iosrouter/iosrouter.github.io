@@ -36,34 +36,12 @@
 </div>
 
 <script>
-  // Function to fetch blood sugar data and update the webpage
-  //function updateBloodSugar() {
-  //  $.ajax({
-  //    url: "http://pydexhandler2-85b0898ba60b.herokuapp.com/",
-  //    method: "GET",
-  //    dataType: "jsonp",
-  //    cors: true,
-  //    secure: true,
-  //    headers: {
-  //      'Access-Control-Allow-Origin': '*',
-  //    },
-  //    success: function(response) {
-  //      const bloodSugarElement = document.getElementById("bloodSugar");
-  //      bloodSugarElement.innerHTML = "Current Blood Sugar: " + response;
-  //    },
-  //    error: function() {
-  //      const bloodSugarElement = document.getElementById("bloodSugar");
-  //      bloodSugarElement.innerHTML = "Failed to fetch blood sugar data.";
-  //    }
-  //  });
-  //}
-  //make a function to get the blood sugar data and update the webpage
+  //Function to fetch blood sugar data and update the webpage
   function updateBloodSugar() {
     $.ajax({
-      url: "https://pydexhandler2-85b0898ba60b.herokuapp.com/",
+      url: "http://pydexhandler2-85b0898ba60b.herokuapp.com/",
       method: "GET",
       dataType: "jsonp",
-      jsonpCallback: 'testing',
       cors: true,
       secure: true,
       headers: {
@@ -79,6 +57,7 @@
       }
     });
   }
+  
 
   // Call the update function initially
   updateBloodSugar();
