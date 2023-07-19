@@ -9,62 +9,92 @@
   <link rel="stylesheet" href="depictions/style.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
   <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+  <style>
+    /* Custom styles for the page */
+    body {
+      background-color: #f7f7f7;
+    }
+    .container {
+      margin-top: 30px;
+    }
+    .card {
+      border: 1px solid #d1d1d1;
+      border-radius: 8px;
+    }
+    .card-body {
+      padding: 20px;
+    }
+    .btn-primary {
+      background-color: #007bff;
+      border-color: #007bff;
+    }
+    .btn-primary:hover {
+      background-color: #0056b3;
+      border-color: #0056b3;
+    }
+    h2 {
+      color: #007bff;
+    }
+  </style>
 </head>
 
 <body>
 
-
-
-<div class="container">
-  <div class="card">
-    <div class="card-body">
-      <p><span class="text-primary"><b>iosrouter</b></span> is a tweak repository.</p>
-      <a class="btn btn-sm btn-primary" href="cydia://url/https://cydia.saurik.com/api/share#?source=https://iosrouter.github.io/">Add to Cydia</a>
-      <a class="btn btn-sm btn-primary" href="zbra://sources/add/https://iosrouter.github.io/">Add to Zebra</a>
-      <a class="btn btn-sm btn-primary" href="sileo://source/https://iosrouter.github.io/">Add to Sileo</a>
+  <div class="container">
+    <div class="card">
+      <div class="card-body">
+        <p><span class="text-primary"><b>iosrouter</b></span> is a tweak repository.</p>
+        <a class="btn btn-sm btn-primary" href="cydia://url/https://cydia.saurik.com/api/share#?source=https://iosrouter.github.io/">Add to Cydia</a>
+        <a class="btn btn-sm btn-primary" href="zbra://sources/add/https://iosrouter.github.io/">Add to Zebra</a>
+        <a class="btn btn-sm btn-primary" href="sileo://source/https://iosrouter.github.io/">Add to Sileo</a>
+      </div>
     </div>
   </div>
-</div>
 
-<div class="container">
-  <div class="card mt-4">
-    <div class="card-body">
-      <h2>Blood Sugar Update</h2>
-      <p id="bloodSugar"></p>
+  <div class="container mt-4">
+    <div class="card">
+      <div class="card-body">
+        <h2>Blood Sugar Update</h2>
+        <p id="bloodSugar"></p>
+      </div>
     </div>
   </div>
-</div>
 
-<script>
-  //Function to fetch blood sugar data and update the webpage
-  function updateBloodSugar() {
-    $.ajax({
-      url: "http://pydexhandler2-85b0898ba60b.herokuapp.com/",
-      method: "GET",
-      dataType: "text",
-      cors: true,
-      secure: true,
-      headers: {
-        'Access-Control-Allow-Origin': '*',
-      },
-      success: function(response) {
-        const bloodSugarElement = document.getElementById("bloodSugar");
-        bloodSugarElement.innerHTML = "ios' Current Blood Sugar: " + response;
-      },
-      error: function() {
-        const bloodSugarElement = document.getElementById("bloodSugar");
-        bloodSugarElement.innerHTML = "Failed to fetch blood sugar data.";
-      }
-    });
-  }
-  
+  <div class="container mt-4">
+    <div class="card">
+      <img src="https://iosrouter.github.io/graph.png" class="card-img-top" alt="Blood Sugar Graph">
+    </div>
+  </div>
 
-  // Call the update function initially
-  updateBloodSugar();
+  <script>
+    //Function to fetch blood sugar data and update the webpage
+    function updateBloodSugar() {
+      $.ajax({
+        url: "http://pydexhandler2-85b0898ba60b.herokuapp.com/",
+        method: "GET",
+        dataType: "text",
+        cors: true,
+        secure: true,
+        headers: {
+          'Access-Control-Allow-Origin': '*',
+        },
+        success: function(response) {
+          const bloodSugarElement = document.getElementById("bloodSugar");
+          bloodSugarElement.innerHTML = "Current Blood Sugar: " + response;
+        },
+        error: function() {
+          const bloodSugarElement = document.getElementById("bloodSugar");
+          bloodSugarElement.innerHTML = "Failed to fetch blood sugar data.";
+        }
+      });
+    }
 
-  // Call the update function every 10 seconds
-  setInterval(updateBloodSugar, 10000);
-</script>
+    // Call the update function initially
+    updateBloodSugar();
+
+    // Call the update function every 10 seconds
+    setInterval(updateBloodSugar, 10000);
+  </script>
 
 </body>
 
