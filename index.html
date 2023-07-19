@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <title>iosrouter's repository</title>
   <meta charset="utf-8">
@@ -8,23 +9,58 @@
   <link rel="stylesheet" href="depictions/style.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 </head>
+
 <body>
 
 <div class="container">
-	<h1><img src="CydiaIcon.png"> iosrouter</h1>
+  <h1><img src="CydiaIcon.png"> iosrouter</h1>
 </div>
 
 <div class="container">
-	<div class="card">
-		<div class="card-body">
-			<p><span class="text-primary"><b>iosrouter</span></b> is a tweak repository.</p>
-			<a class="btn btn-sm btn-primary" href="cydia://url/https://cydia.saurik.com/api/share#?source=https://iosrouter.github.io/">Add to Cydia</a>
-			<a class="btn btn-sm btn-primary" href="zbra://sources/add/https://iosrouter.github.io/">Add to Zebra</a>
-			<a class="btn btn-sm btn-primary" href="sileo://source/https://iosrouter.github.io/">Add to Sileo</a>
-		</div>
-	</div>
+  <div class="card">
+    <div class="card-body">
+      <p><span class="text-primary"><b>iosrouter</b></span> is a tweak repository.</p>
+      <a class="btn btn-sm btn-primary" href="cydia://url/https://cydia.saurik.com/api/share#?source=https://iosrouter.github.io/">Add to Cydia</a>
+      <a class="btn btn-sm btn-primary" href="zbra://sources/add/https://iosrouter.github.io/">Add to Zebra</a>
+      <a class="btn btn-sm btn-primary" href="sileo://source/https://iosrouter.github.io/">Add to Sileo</a>
+    </div>
+  </div>
 </div>
-<p></p>
+
+<div class="container">
+  <div class="card mt-4">
+    <div class="card-body">
+      <h2>Blood Sugar Update</h2>
+      <p id="bloodSugar"></p>
+    </div>
+  </div>
+</div>
+
+<script>
+  // Function to fetch blood sugar data and update the webpage
+  function updateBloodSugar() {
+    $.ajax({
+      url: "https://pydexhandler2-85b0898ba60b.herokuapp.com/",
+      method: "GET",
+      dataType: "json",
+      success: function(response) {
+        const bloodSugarElement = document.getElementById("bloodSugar");
+        bloodSugarElement.innerHTML = "Current Blood Sugar: " + response.blood_sugar;
+      },
+      error: function() {
+        const bloodSugarElement = document.getElementById("bloodSugar");
+        bloodSugarElement.innerHTML = "Failed to fetch blood sugar data.";
+      }
+    });
+  }
+
+  // Call the update function initially
+  updateBloodSugar();
+
+  // Call the update function every 10 seconds
+  setInterval(updateBloodSugar, 10000);
+</script>
 
 </body>
+
 </html>
