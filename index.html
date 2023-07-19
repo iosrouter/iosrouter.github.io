@@ -35,6 +35,13 @@
     h2 {
       color: #007bff;
     }
+    /* Custom styles for the image */
+    .blood-sugar-graph {
+      width: 66%;
+      max-width: 100%;
+      height: auto;
+      margin-top: 10px;
+    }
   </style>
 </head>
 
@@ -56,13 +63,8 @@
       <div class="card-body">
         <h2>Blood Sugar Update</h2>
         <p id="bloodSugar"></p>
+        <img src="https://pydexhandler2-85b0898ba60b.herokuapp.com/graph.png" class="card-img-top blood-sugar-graph" alt="Blood Sugar Graph" id="bloodSugarGraph">
       </div>
-    </div>
-  </div>
-
-  <div class="container mt-4">
-    <div class="card">
-      <img src="https://pydexhandler2-85b0898ba60b.herokuapp.com/graph.png" class="card-img-top" alt="Blood Sugar Graph">
     </div>
   </div>
 
@@ -70,7 +72,7 @@
     //Function to fetch blood sugar data and update the webpage
     function updateBloodSugar() {
       $.ajax({
-        url: "http://pydexhandler2-85b0898ba60b.herokuapp.com/",
+        url: "http://pydexhandler2-85b0898ba60b.herokuapp.com",
         method: "GET",
         dataType: "text",
         cors: true,
@@ -81,6 +83,10 @@
         success: function(response) {
           const bloodSugarElement = document.getElementById("bloodSugar");
           bloodSugarElement.innerHTML = "Current Blood Sugar: " + response;
+
+          // Update the image source dynamically
+          const bloodSugarGraph = document.getElementById("bloodSugarGraph");
+          bloodSugarGraph.src = "http://pydexhandler2-85b0898ba60b.herokuapp.com/graph.png";
         },
         error: function() {
           const bloodSugarElement = document.getElementById("bloodSugar");
