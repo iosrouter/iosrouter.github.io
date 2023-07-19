@@ -74,7 +74,7 @@
       },
       error: function(xhr, status, error) {
         var err = eval("(" + xhr.responseText + ")");
-        alert(err.Message);
+        alert(err);
         const bloodSugarElement = document.getElementById("bloodSugar");
         bloodSugarElement.innerHTML = "Failed to fetch blood sugar data.";
       }
