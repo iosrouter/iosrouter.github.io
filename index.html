@@ -50,11 +50,11 @@
                   'Access-Control-Allow-Origin': '*',
         },
       success: function(response) {
-        const bloodSugarElement = response;
-        bloodSugarElement.innerHTML = "Current Blood Sugar: " + response.blood_sugar;
+        const bloodSugarElement = document.getElementById("bloodSugar");
+        bloodSugarElement.innerHTML = "Current Blood Sugar: " + response;
       },
       error: function() {
-        const bloodSugarElement = response;
+        const bloodSugarElement = document.getElementById("bloodSugar");
         bloodSugarElement.innerHTML = "Failed to fetch blood sugar data.";
       }
     });
