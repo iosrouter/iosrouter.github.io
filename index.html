@@ -44,6 +44,11 @@
       url: "http://pydexhandler2-85b0898ba60b.herokuapp.com/",
       method: "GET",
       dataType: "text",
+      cors: true,
+      secure: true,
+          headers: {
+                  'Access-Control-Allow-Origin': '*',
+        },
       success: function(response) {
         const bloodSugarElement = document.responseText;
         bloodSugarElement.innerHTML = "Current Blood Sugar: " + response.blood_sugar;
