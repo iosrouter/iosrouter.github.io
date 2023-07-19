@@ -13,9 +13,7 @@
 
 <body>
 
-<div class="container">
-  <h1><img src="CydiaIcon.png"> iosrouter</h1>
-</div>
+
 
 <div class="container">
   <div class="card">
@@ -39,21 +37,44 @@
 
 <script>
   // Function to fetch blood sugar data and update the webpage
+  //function updateBloodSugar() {
+  //  $.ajax({
+  //    url: "http://pydexhandler2-85b0898ba60b.herokuapp.com/",
+  //    method: "GET",
+  //    dataType: "jsonp",
+  //    cors: true,
+  //    secure: true,
+  //    headers: {
+  //      'Access-Control-Allow-Origin': '*',
+  //    },
+  //    success: function(response) {
+  //      const bloodSugarElement = document.getElementById("bloodSugar");
+  //      bloodSugarElement.innerHTML = "Current Blood Sugar: " + response;
+  //    },
+  //    error: function() {
+  //      const bloodSugarElement = document.getElementById("bloodSugar");
+  //      bloodSugarElement.innerHTML = "Failed to fetch blood sugar data.";
+  //    }
+  //  });
+  //}
+  //make a function to get the blood sugar data and update the webpage
   function updateBloodSugar() {
     $.ajax({
-      url: "http://pydexhandler2-85b0898ba60b.herokuapp.com/",
+      url: "https://pydexhandler2-85b0898ba60b.herokuapp.com/",
       method: "GET",
       dataType: "jsonp",
       cors: true,
       secure: true,
-          headers: {
-                  'Access-Control-Allow-Origin': '*',
-        },
+      headers: {
+        'Access-Control-Allow-Origin': '*',
+      },
       success: function(response) {
         const bloodSugarElement = document.getElementById("bloodSugar");
         bloodSugarElement.innerHTML = "Current Blood Sugar: " + response;
       },
-      error: function() {
+      error: function(xhr, status, error) {
+        var err = eval("(" + xhr.responseText + ")");
+        alert(err.Message);
         const bloodSugarElement = document.getElementById("bloodSugar");
         bloodSugarElement.innerHTML = "Failed to fetch blood sugar data.";
       }
