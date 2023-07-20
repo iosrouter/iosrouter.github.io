@@ -85,8 +85,8 @@
           bloodSugarElement.innerHTML = "His Current Blood Sugar is: " + response;
 
           // Update the image source dynamically
-          const bloodSugarGraph = document.getElementById("bloodSugarGraph");
-          bloodSugarGraph.src = "http://pydexhandler2-85b0898ba60b.herokuapp.com/graph.png";
+          var bloodSugarGraph = document.getElementById("bloodSugarGraph");
+          bloodSugarGraph.src = "http://pydexhandler2-85b0898ba60b.herokuapp.com/graph.png?" + Math.random();
         },
         error: function() {
           const bloodSugarElement = document.getElementById("bloodSugar");
