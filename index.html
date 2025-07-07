@@ -63,7 +63,7 @@
       <div class="card-body">
         <h2>Blood Sugar Update</h2>
         <p id="bloodSugar"></p>
-        <img src="https://pydexhandler2-85b0898ba60b.herokuapp.com/graph.png" class="card-img-top blood-sugar-graph" alt="Blood Sugar Graph" id="bloodSugarGraph">
+        <img src="https://pydex.website/graph.png" class="card-img-top blood-sugar-graph" alt="Blood Sugar Graph" id="bloodSugarGraph">
       </div>
     </div>
   </div>
@@ -72,7 +72,7 @@
     //Function to fetch blood sugar data and update the webpage
     function updateBloodSugar() {
       $.ajax({
-        url: "http://pydexhandler2-85b0898ba60b.herokuapp.com",
+        url: "https://pydex.website/",
         method: "GET",
         dataType: "text",
         cors: true,
@@ -86,7 +86,7 @@
 
           // Update the image source dynamically
           var bloodSugarGraph = document.getElementById("bloodSugarGraph");
-          bloodSugarGraph.src = "http://pydexhandler2-85b0898ba60b.herokuapp.com/graph.png?" + Math.random();
+          bloodSugarGraph.src = "https://pydex.website/graph.png?" + Math.random();
         },
         error: function() {
           const bloodSugarElement = document.getElementById("bloodSugar");
